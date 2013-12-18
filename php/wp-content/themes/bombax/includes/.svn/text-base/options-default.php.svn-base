@@ -1,0 +1,100 @@
+<?php
+/*
+ * default options if the options not set by theme options.
+ */
+$layout=array(
+	'column'=>3,
+	'wrapping'=>'flex',
+	'min_width'=>'800',
+	'max_width'=>'1600',
+	'wrap'=>'1000',
+	'sidebar1'=>'300',
+	'sidebar2'=>'150',
+	'sidebarunit'=>'px',
+	'style'=>get_option(get_stylesheet().'_default_style'),
+	'innertop'=>2,
+	'innerbottom'=>2,
+	'footer'=>4,
+	);
+$front=array(
+	'type'=>'fe',
+	'archive_type'=>'excerpt',
+	'column'=>2,
+	'featuredlim'=>70,
+	'excerptlim'=>20,
+	'featuredx'=>300,
+	'featuredy'=>200,
+	'thumbx'=>75,
+	'thumby'=>100,
+	'catch'=>1,
+	'not'=>1,
+	'fnotimg'=>'',
+	'notimg'=>'',
+	'excerpt_more'=>'...Read the Rest',
+	'meta'=>array('commentcount'=>'commentcount','left'=>'category','right'=>'date'),
+	'post_meta'=>array('commentcount'=>1,'date'=>1,'author'=>'','categories'=>1,'tags'=>1,'author_info'=>'')
+	);
+$header=array(
+	'image'=>'',
+	'head_bg'=>'Sand',
+	'bg_height'=>200,
+	'head_type'=>0,
+	'logo'=> get_template_directory_uri().'/images/bombax.png',
+	'repeat'=>'no-repeat',
+	'h_align'=>'center',
+	'v_align'=>'top',
+	'scope'=>1,
+	'height'=>'',
+	'font_size'=>'3em',
+	'span_font_size'=>'1.8em',
+	'color'=>'#ffffff',
+	'hover_color'=>'#ffff88',
+	'span_color'=>'#ffffaa',
+	'bgcolor'=>'transparent',
+	'text_align'=>'left',
+	);
+$bg=array(
+	'image'=> '',
+	'attachment'=>'scroll',
+	'repeat'=>'no-repeat',
+	'bgcolor'=>'',
+	'v_align'=>'top',
+	'h_align'=>'center',
+	'resize'=>'100',
+	);
+$menu=array(
+	'wp_menu'=>1,
+	'top_home'=>'Home',
+	'top_align'=>'right',
+	'top_depth'=>'2',
+	'top_show'=>'page',
+	'top_margin'=>40,
+	'top_bg_color'=>'#cccccc',
+	'home'=>'Home',
+	'depth'=>'0',
+	'cat_inc'=>array(),
+	'cat_sortby'=>'name',
+	'cat_order'=>'ASC',
+	'page_inc'=>array(),
+	'page_sortby'=>'post_title',
+	'page_order'=>'ASC',
+	'show'=>'cat'
+	);
+$links=array(
+	'rss'=>get_bloginfo('rss2_url'),
+	'hide_rss'=>0,
+	'crss'=>get_bloginfo('comments_rss2_url'),
+	'twitter'=>'itx_',
+	'facebook'=>'BombaxTheme',
+	);
+$single=array(
+	'post_meta'=>array('commentcount'=>1,'date'=>1,'author'=>'','categories'=>1,'tags'=>1,'author_info'=>''),
+	'page_meta'=>array('commentcount'=>1,'author'=>'','author_info'=>''),
+);
+$css=array(
+	'insert'=>''
+);
+$misc=array(
+	'favicon'=> get_template_directory_uri().'/images/favicon.ico'
+	);
+?>
